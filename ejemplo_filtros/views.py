@@ -18,3 +18,7 @@ def lista_frutas(request):
 def lista_productos(request):
     productos = {'Manzana' : 1.2, 'Platano': 0.8, 'Naranja' : 1.5}
     return render(request, 'productos.html', {'productos':productos})
+
+def lista_nombres(request):
+    nombres = ['Ana','Carlos','Beatriz','Juan']
+    return render(request, 'nombres.html',{'nombres' : nombres})

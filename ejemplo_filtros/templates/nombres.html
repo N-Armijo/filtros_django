@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nombres</title>
+</head>
+<style>
+    .fondo1 {
+        background-color: #f4f4f4; /*color gris claro*/
+    }
+    .fondo2 {
+        background-color: #e9ecef; /*color gris mas oscuro*/
+    }
+</style>
+<body>
+    <h1>Lista Nombres</h1>
+    <ul>
+        {% for nombre in nombres %}
+            <!--No olvidar que el % va al principio y final del bloque cycle-->
+            <li class="{% cycle 'fondo1' 'fondo2' %}">{{nombre}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

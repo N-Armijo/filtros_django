@@ -20,6 +20,7 @@ from ejemplo_filtros.views import vista_ejemplo as filtro
 from ejemplo_filtros.views import saludo
 from ejemplo_filtros.views import lista_frutas as frutas
 from ejemplo_filtros.views import lista_productos as productos
+from ejemplo_filtros.views import lista_nombres as nombres
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -27,4 +28,5 @@ urlpatterns = [
     path('saludo/', saludo, name='saludo' ),
     path('frutas/', frutas, name='frutas' ),
     path('productos/', productos, name='productos' ),
+    path('nombres/', nombres, name='nombres' ),
 ]
