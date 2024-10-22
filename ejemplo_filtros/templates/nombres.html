@@ -1,18 +1,16 @@
+<!--NO OLVIDAR PARA QUE CARGUE LOS ESTILOS EXTERNOS-->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista Nombres</title>
+    <title>Lista Nombres % cycle %</title>
+
+    <!--Enlace al css externo NO OLVIDAR LOS % AL PRINCIPIO Y FIN de static Y 'css/hoja_estilo.css'. Tambien el STATIC_URL = '/static/' en settings.py-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
-<style>
-    .fondo1 {
-        background-color: #f4f4f4; /*color gris claro*/
-    }
-    .fondo2 {
-        background-color: #e9ecef; /*color gris mas oscuro*/
-    }
-</style>
+
 <body>
     <h1>Lista Nombres</h1>
     <ul>
