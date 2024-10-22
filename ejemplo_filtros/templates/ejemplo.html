@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista filtros</title>
+</head>
+<body>
+    <h1>Filtros</h1>
+    <ul>
+        <!--Forma si es que no estoy retornando un diccionario-->
+        <!-- <li>{{nombre}} - 
+            {% for fruta in items%}
+                {{fruta}}
+            {% endfor%}
+            
+        </li> -->
+        <li>{{contexto.nombre|upper}} - 
+            {% for fruta in contexto.items%}
+                {{fruta|upper}}
+            {% endfor%}
+            
+        </li>
+    </ul>
+</body>
+</html>
