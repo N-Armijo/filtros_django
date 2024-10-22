@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from ejemplo_filtros.views import vista_ejemplo as filtro
 from ejemplo_filtros.views import saludo
+from ejemplo_filtros.views import lista_frutas as frutas
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', filtro, name='' ),
     path('saludo/', saludo, name='saludo' ),
+    path('frutas/', frutas, name='frutas' ),
 ]
